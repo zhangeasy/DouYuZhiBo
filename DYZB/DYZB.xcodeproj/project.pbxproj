@@ -12,6 +12,9 @@
 		1ED4A6CE212F083A0058CAEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED4A6CC212F083A0058CAEA /* Main.storyboard */; };
 		1ED4A6D0212F083C0058CAEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED4A6CF212F083C0058CAEA /* Assets.xcassets */; };
 		1ED4A6D3212F083C0058CAEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED4A6D1212F083C0058CAEA /* LaunchScreen.storyboard */; };
+		1ED4A6F8212FE7320058CAEA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4A6F7212FE7320058CAEA /* MainTabBarController.swift */; };
+		1ED4A704212FEA720058CAEA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED4A702212FEA720058CAEA /* Home.storyboard */; };
+		1ED4A708212FF70F0058CAEA /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED4A706212FF70F0058CAEA /* Live.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		1ED4A6CF212F083C0058CAEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1ED4A6D2212F083C0058CAEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1ED4A6D4212F083C0058CAEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ED4A6F7212FE7320058CAEA /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		1ED4A703212FEA720058CAEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
+		1ED4A707212FF70F0058CAEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Live.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +60,7 @@
 		1ED4A6C7212F083A0058CAEA /* DYZB */ = {
 			isa = PBXGroup;
 			children = (
-				1ED4A6DA212FA21D0058CAEA /* Main */,
-				1ED4A6DB212FA21D0058CAEA /* Home */,
-				1ED4A6DC212FA21D0058CAEA /* Tools */,
+				1ED4A6EC212FE7320058CAEA /* Classes */,
 				1ED4A6C8212F083A0058CAEA /* AppDelegate.swift */,
 				1ED4A6CA212F083A0058CAEA /* ViewController.swift */,
 				1ED4A6CC212F083A0058CAEA /* Main.storyboard */,
@@ -67,25 +71,78 @@
 			path = DYZB;
 			sourceTree = "<group>";
 		};
-		1ED4A6DA212FA21D0058CAEA /* Main */ = {
+		1ED4A6EC212FE7320058CAEA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1ED4A6F6212FE7320058CAEA /* Main */,
+				1ED4A6ED212FE7320058CAEA /* Home */,
+				1ED4A6F0212FE7320058CAEA /* Tools */,
+				1ED4A6F1212FE7320058CAEA /* Follow */,
+				1ED4A6F4212FE7320058CAEA /* Profile */,
+				1ED4A6F5212FE7320058CAEA /* Live */,
 			);
-			path = Main;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		1ED4A6DB212FA21D0058CAEA /* Home */ = {
+		1ED4A6ED212FE7320058CAEA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1ED4A6FE212FE83B0058CAEA /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		1ED4A6DC212FA21D0058CAEA /* Tools */ = {
+		1ED4A6F0212FE7320058CAEA /* Tools */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		1ED4A6F1212FE7320058CAEA /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		1ED4A6F4212FE7320058CAEA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1ED4A6F5212FE7320058CAEA /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4A705212FEB2F0058CAEA /* Controller */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		1ED4A6F6212FE7320058CAEA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4A6F7212FE7320058CAEA /* MainTabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1ED4A6FE212FE83B0058CAEA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4A702212FEA720058CAEA /* Home.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1ED4A705212FEB2F0058CAEA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4A706212FF70F0058CAEA /* Live.storyboard */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +206,8 @@
 				1ED4A6D3212F083C0058CAEA /* LaunchScreen.storyboard in Resources */,
 				1ED4A6D0212F083C0058CAEA /* Assets.xcassets in Resources */,
 				1ED4A6CE212F083A0058CAEA /* Main.storyboard in Resources */,
+				1ED4A708212FF70F0058CAEA /* Live.storyboard in Resources */,
+				1ED4A704212FEA720058CAEA /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +220,7 @@
 			files = (
 				1ED4A6CB212F083A0058CAEA /* ViewController.swift in Sources */,
 				1ED4A6C9212F083A0058CAEA /* AppDelegate.swift in Sources */,
+				1ED4A6F8212FE7320058CAEA /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +241,22 @@
 				1ED4A6D2212F083C0058CAEA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1ED4A702212FEA720058CAEA /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ED4A703212FEA720058CAEA /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		1ED4A706212FF70F0058CAEA /* Live.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ED4A707212FF70F0058CAEA /* Base */,
+			);
+			name = Live.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -304,10 +380,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SGVL4496EH;
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,10 +400,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SGVL4496EH;
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
